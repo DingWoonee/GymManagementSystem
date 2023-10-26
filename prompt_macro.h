@@ -1,28 +1,34 @@
-#pragma once
-//������Ʈ ����
-#define MENU_INPUT_ERROR_MESSAGE "���ϴ� �޴��� ���ڸ��� �Է��� �ּ���.\n�����ϼ���(���ڸ� �Է�) : "
-#define ADMIN_LOGIN_ERROR_MESSAGE "��й�ȣ�� Ʋ���ϴ�."
-#define TRAINER_LOGIN_ERROR_MESSAGE "�������� �ʴ� �̸��Դϴ�."
-#define INPUT_INFO_ERROR_MESSAGE "�Է� �����Ͱ� �ùٸ��� �ʽ��ϴ�."
-#define INPUT_ID_ERROR_MESSAGE "���� ��ȣ�Դϴ�."
-#define ADMIN_PROMPT "[������ �޴�]\n1. Ʈ���̳� ���\n2. Ʈ���̳� ����\n3. Ʈ���̳� ����\n4. ȸ�� ���\n5. ȸ�� ����\n6. ȸ�� ����\n7. �α׾ƿ�\n0. ����\n�����ϼ���(���ڸ� �Է�) : "
-#define TRAINER_REGISTRATION_PROMPT1 "[Ʈ���̳� ���]\n�̸�, �������, ����ó�� �Է��� �ּ���.\n(�Է¿���: ȫ�浿 19991225 01067003261)\n�Է� : "
-#define TRAINER_REGISTRATION_PROMPT2 "�Ի����� �Է��� �ּ���.\n(�Է¿���: 20221229)\n�Է� : "
-#define TRAINER_UPDATE_PROMPT "[Ʈ���̳� ����]\n������ȣ�� �Է��� �ּ���.\n(�Է¿���: 13)\n�Է� : "
-#define UPDATE_COMPLETE_MESSAGE "������ �Ϸ�Ǿ����ϴ�."
-#define TRAINER_DELETION_PROMPT "[Ʈ���̳� ����]\n������ȣ�� �Է��� �ּ���.\n(�Է¿���: 13)\n�Է� : "
-#define CONFIRM_DELETION_PROMPT "���� �����Ͻðڽ��ϱ�? (����������� �Է� �� ����)\n(�Է¿��� : ����)\n�Է� : "
-#define DELETION_COMPLETE)_MESSAGE "������ �Ϸ�Ǿ����ϴ�."
-#define MEMBER_REGISTRATION_PROMPT1 "[ȸ�� ���]\n�̸�, �������, ����ó�� �Է��� �ּ���.\n(�Է¿���: ȫ�浿 19991225 01067003261)\n�Է� : "
-#define MEMBER_REGISTRATION_PROMPT2 "�����, ��� Ʈ���̳�, PT��, PTȽ���� �Է��� �ּ���.\n(�Է¿���: 20221229 ��浿 ������ 30)\n�Է� : "
-#define MEMBER_UPDATE_PROMPT "[ȸ�� ����]\nȸ�� ��ȣ�� �Է��� �ּ���.\n(�Է¿���: 13)\n�Է� : "
-#define UPDATE_COMPLETE_MESSAGE "������ �Ϸ�Ǿ����ϴ�."
-#define MEMBER_DELETION_PROMPT "[ȸ�� ����]\nȸ�� ��ȣ�� �Է��� �ּ���.\n(�Է¿���: 13)\n�Է� : "
-#define TRAINER_PROMPT "[Ʈ���̳� �޴�]\n1. ���ȸ��\n2. �α׾ƿ�\n0. ����\n�����ϼ���(���ڸ� �Է�) : "
-#define ASSIGNED_MEMBER_LIST_MESSAGE "[��� ȸ�� ����Ʈ]\nȸ����ȣ\t�̸�\t��ȣ\tPT��\tPTȽ��\n\n"
+﻿#pragma once
+//프롬프트 문구
+#define INITIAL "\
+###############################################\n\
+##                                           ##\n\
+##           GYM MANAGEMENT SYSTEM           ##\n\
+##                                           ##\n\
+###############################################\n"
+#define MENU_INPUT_ERROR_MESSAGE "원하는 메뉴의 숫자만을 입력해 주세요.\n선택하세요(숫자만 입력) : "
+#define ADMIN_LOGIN_ERROR_MESSAGE "비밀번호가 틀립니다."
+#define TRAINER_LOGIN_ERROR_MESSAGE "존재하지 않는 이름입니다."
+#define INPUT_INFO_ERROR_MESSAGE "입력 데이터가 올바르지 않습니다."
+#define INPUT_ID_ERROR_MESSAGE "없는 번호입니다."
+#define ADMIN_PROMPT "[관리자 메뉴]\n1. 트레이너 등록\n2. 트레이너 수정\n3. 트레이너 삭제\n4. 회원 등록\n5. 회원 수정\n6. 회원 삭제\n7. 로그아웃\n0. 종료\n선택하세요(숫자만 입력) : "
+#define TRAINER_REGISTRATION_PROMPT1 "[트레이너 등록]\n이름, 생년월일, 연락처를 입력해 주세요.\n(입력예시: 홍길동 19991225 01067003261)\n입력 : "
+#define TRAINER_REGISTRATION_PROMPT2 "입사일을 입력해 주세요.\n(입력예시: 20221229)\n입력 : "
+#define TRAINER_UPDATE_PROMPT "[트레이너 수정]\n고유번호를 입력해 주세요.\n(입력예시: 13)\n입력 : "
+#define UPDATE_COMPLETE_MESSAGE "수정이 완료되었습니다."
+#define TRAINER_DELETION_PROMPT "[트레이너 삭제]\n고유번호를 입력해 주세요.\n(입력예시: 13)\n입력 : "
+#define CONFIRM_DELETION_PROMPT "정말 삭제하시겠습니까? (“삭제”라고 입력 시 삭제)\n(입력예시 : 삭제)\n입력 : "
+#define DELETION_COMPLETE_MESSAGE "삭제가 완료되었습니다."
+#define MEMBER_REGISTRATION_PROMPT1 "[회원 등록]\n이름, 생년월일, 연락처를 입력해 주세요.\n(입력예시: 홍길동 19991225 01067003261)\n입력 : "
+#define MEMBER_REGISTRATION_PROMPT2 "등록일, 담당 트레이너, PT반, PT횟수를 입력해 주세요.\n(입력예시: 20221229 김길동 오전반 30)\n입력 : "
+#define MEMBER_UPDATE_PROMPT "[회원 수정]\n회원 번호를 입력해 주세요.\n(입력예시: 13)\n입력 : "
+#define UPDATE_COMPLETE_MESSAGE "수정이 완료되었습니다."
+#define MEMBER_DELETION_PROMPT "[회원 삭제]\n회원 번호를 입력해 주세요.\n(입력예시: 13)\n입력 : "
+#define TRAINER_PROMPT "[트레이너 메뉴]\n1. 담당회원\n2. 로그아웃\n0. 종료\n선택하세요(숫자만 입력) : "
+#define ASSIGNED_MEMBER_LIST_MESSAGE "[담당 회원 리스트]\n회원번호\t이름\t번호\tPT반\tPT횟수\n\n"
 
-//��Ÿ
+//기타
 #define TRAINER_DATA_FILE_PATH "trainer_data.txt"
 #define MEMBER_DATA_FILE_PATH "member_data.txt"
-#define ADMIN_INFO "������ 1111"
+#define ADMIN_INFO "관리자 1111"
 #define MAX_LINE 1024
