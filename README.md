@@ -1,10 +1,10 @@
 # GymManagementSystem
 전공기초프로젝트2 구현물입니다.
 
-박건우 - admin
-나예진 - file_manager
-차민우 - trainer
-황혜령 - login
+박건우 - admin<br>
+나예진 - file_manager<br>
+차민우 - trainer<br>
+황혜령 - login<br>
 김성운 - admin, main
 
 설계 문서 보고 구현하면 될 것 같습니다.
