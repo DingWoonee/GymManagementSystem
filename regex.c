@@ -1,5 +1,5 @@
 #include "regex.h"
 
-bool IsMatch(char* pattern, char* input) {
+bool IsMatch(const char* pattern, const char* input) {
 
 }
