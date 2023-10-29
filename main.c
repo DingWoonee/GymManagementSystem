@@ -26,11 +26,11 @@ int main() {
 
 	//프롬프트 시작
 	while (1) {
+		printf(INITIAL);
+
 		PrintLogin();
 		InputLogin();
 	}
-
-	printf(INITIAL);
 
 	return 0;
 }
