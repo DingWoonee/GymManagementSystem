@@ -13,12 +13,12 @@ int CreateTrainerFile() {
         file = fopen("trainer_data.txt", "w");
         fprintf(file, ADMIN_INFO); //관리자 데이터 입력
         fclose(file);
-        printf("트레이너 파일 새로 생성, 관리자 데이터 입력됨"); //나중에 지울 부분
-        return 0;
         if (file == NULL) {
             perror("트레이너 파일 생성 실패");
             return -1;
         }
+        printf("트레이너 파일 새로 생성, 관리자 데이터 입력됨"); //나중에 지울 부분
+        return 0;
     }
     else {
         fclose(file);
