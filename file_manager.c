@@ -71,12 +71,12 @@ int CreateMemberFile() {
     if (file == NULL) {
         file = fopen("trainer_data.txt", "a");
         fclose(file);
-        printf("멤버 파일 새로 생성"); //나중에 지울 부분
-        return 0;
         if (file == NULL) {
             perror("멤버 파일 생성 실패");
             return -1;
         }
+        printf("멤버 파일 새로 생성"); //나중에 지울 부분
+        return 0;
     }
     else {
         fclose(file);
