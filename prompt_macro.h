@@ -7,8 +7,8 @@
 ##                                           ##\n\
 ###############################################\n"
 #define MENU_INPUT_ERROR_MESSAGE "원하는 메뉴의 숫자만을 입력해 주세요.\n선택하세요(숫자만 입력) : "
-#define ADMIN_LOGIN_ERROR_MESSAGE "비밀번호가 틀립니다."
-#define TRAINER_LOGIN_ERROR_MESSAGE "존재하지 않는 이름입니다."
+#define ADMIN_LOGIN_ERROR_MESSAGE "비밀번호가 틀립니다.\n"
+#define TRAINER_LOGIN_ERROR_MESSAGE "존재하지 않는 이름입니다.\n"
 #define INPUT_INFO_ERROR_MESSAGE "입력 데이터가 올바르지 않습니다."
 #define INPUT_ID_ERROR_MESSAGE "없는 번호입니다."
 #define ADMIN_PROMPT "[관리자 메뉴]\n1. 트레이너 등록\n2. 트레이너 수정\n3. 트레이너 삭제\n4. 회원 등록\n5. 회원 수정\n6. 회원 삭제\n7. 로그아웃\n0. 종료\n선택하세요(숫자만 입력) : "
